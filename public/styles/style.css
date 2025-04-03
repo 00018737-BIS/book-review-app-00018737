@@ -1,0 +1,230 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body - Use flexbox to push footer down */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #e9ecef;
+    color: #212529;
+    line-height: 1.6;
+    padding: 30px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure content takes up available space */
+#content {
+    flex: 1 0 auto; /* Pushes footer to bottom */
+}
+
+/* Headings */
+h1 {
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #495057;
+}
+
+/* General link styling */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Button base class */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Add New Review button */
+.btn-add {
+    background: #17a2b8;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.btn-add:hover {
+    background: #138496;
+}
+
+/* Review container */
+.review {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.review:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review h2 {
+    color: #dc3545;
+    font-size: 1.6em;
+    margin-bottom: 8px;
+}
+
+.review p {
+    color: #6c757d;
+    font-size: 1em;
+}
+
+.review a {
+    margin-right: 15px;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.review a:hover {
+    background: #0056b3;
+}
+
+/* Form styling */
+form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #343a40;
+    font-size: 1em;
+}
+
+/* Inputs and Textarea */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1em;
+    background: #f8f9fa;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Save button */
+button {
+    background: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 120px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Cancel button */
+form a.btn-cancel {
+    background: #fff;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    padding: 10px 20px;
+    width: 120px;
+    margin-left: 15px;
+}
+
+form a.btn-cancel:hover {
+    background: #dc3545;
+    color: #fff;
+}
+
+/* Error list */
+.error-list {
+    list-style: none;
+    color: #dc3545;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.error-list li {
+    background: #f8d7da;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+/* Footer - Fixed to bottom */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #6c757d;
+    padding: 10px 0;
+    flex-shrink: 0; /* Prevents footer from shrinking */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    .review {
+        padding: 15px;
+    }
+    form {
+        padding: 20px;
+    }
+    button, form a.btn-cancel {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
