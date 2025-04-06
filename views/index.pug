@@ -1,0 +1,16 @@
+extends layout.pug
+block content
+    div#content
+        h1 Book Review App
+        p Welcome! Manage your book reviews below.
+        a(href='/reviews/new', class='btn btn-add') Add New Review
+        if reviews.length
+            each review in reviews
+                div.review
+                    h2= review.title
+                    p Author: #{review.author}
+                    p= review.content
+                    a(href=`/reviews/edit/${review.id}`) Edit
+                    a(href=`/reviews/delete/${review.id}`) Delete
+        else
+            p No reviews yet.
