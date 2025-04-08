@@ -17,5 +17,5 @@ app.use('/', indexRouter);
 app.use('/reviews', reviewsRouter);
 
 app.listen(PORT, () => {
-    console.log(App listening on port ${PORT});
+    console.log(`App listening on port ${PORT}`);
 });
