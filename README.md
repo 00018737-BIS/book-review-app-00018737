@@ -1,11 +1,13 @@
 ###### Book Review App
 
 ## About the App
-A simple web application built with Express.js and Node.js for managing book reviews. User can add, edit and delete the reviews. Reviews are created with a form. 
+
+A simple web application built with Express.js and Node.js for managing book reviews. User can add, edit and delete the reviews. Reviews are created with a form.
 
 ## Links
+
 - GitHub Repository: https://github.com/00018737-BIS/book-review-app-00018737
-- Hosted App: 
+- Hosted App: https://book-review-app-00018737.onrender.com/reviews
 
 ## how to run through app locally?
 
@@ -16,7 +18,7 @@ A simple web application built with Express.js and Node.js for managing book rev
 3. on terminal: npm install
 
 4. create .env file and write:
-PORT=5000
+   PORT=5000
 
 5. on terminal: npm start
 
@@ -34,27 +36,27 @@ express-validator: ^7.0.1 - Validates and sanitizes user inputs.
 
 nodemon: ^3.1.0 (dev dependency) - Automatically restarts the server during development
 
-## Project Structure 
+## Project Structure
 
-app.js              Main application. Sets up Express and routes
-package.json        Configuration and dependencies of the app
-.gitignore          Deletes node_modules and .env from git visibility
-.env                Environment variables (PORT:5000)
-/public             Assets for UI
-    /images         File for images
-    /javascripts    File for JS files needed for UI front end
-    /styles
-       style.css    CSS files for UI 
-/routes             Routes for HTTP requests
-    index.js        Routes for main page
-    reviews.js      Routes for CRUD operations
-/views              Pug templates for the UI
-    index.pug       Homepage where is the review list
-    layout.pug      Base layout with header, footer, and styles
-    review-form.pug Form for creating and editing reviews
-/controllers        Logic for routes
-    index.js        Logic for homepage
-    reviews.js      Controls CRUD operations
-/services           Service layer for data base
-    reviews.js      Memory storage and logic for reviews
-README.md           Docummentation file that you are reading 
+app.js Main application. Sets up Express and routes
+package.json Configuration and dependencies of the app
+.gitignore Deletes node_modules and .env from git visibility
+.env Environment variables (PORT:5000)
+/public Assets for UI
+/images File for images
+/javascripts File for JS files needed for UI front end
+/styles
+style.css CSS files for UI
+/routes Routes for HTTP requests
+index.js Routes for main page
+reviews.js Routes for CRUD operations
+/views Pug templates for the UI
+index.pug Homepage where is the review list
+layout.pug Base layout with header, footer, and styles
+review-form.pug Form for creating and editing reviews
+/controllers Logic for routes
+index.js Logic for homepage
+reviews.js Controls CRUD operations
+/services Service layer for data base
+reviews.js Memory storage and logic for reviews
+README.md Docummentation file that you are reading
